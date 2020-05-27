@@ -1,0 +1,62 @@
+%%% File encoding is utf8
+%%% You can use special characters just like ä,ü and ñ
+
+\usepackage[utf8]{inputenc}
+
+% Font Encoding is 'T1' -- important for special characters such as Umlaute ü or ä and special characters like ñ (enje)
+% CTAN: http://www.ctan.org/pkg/fontenc
+\usepackage[T1]{fontenc}
+
+% Language support for 'english' (alternative 'ngerman' or 'french' for example)
+% CTAN: http://www.ctan.org/pkg/babel
+%\usepackage[english]{babel} 
+
+% Package für Abkürzungsverzeichnis
+\usepackage[printonlyused]{acronym}
+
+% Package for smart diagrams
+\usepackage{smartdiagram}
+
+% Doing calculations with LaTeX units -- needed for the vertical line in the footer
+% CTAN: http://www.ctan.org/pkg/calc
+\usepackage{calc}
+
+% Extended graphics support 
+% There is also a package named 'graphics' - watch out!
+% CTAN: http://www.ctan.org/pkg/graphicx
+\usepackage{graphicx}
+
+% Extendes support for floating objects (tables, figures), adds the [H] placing option (\begin{figure}[H]) which palces it "Here" (without any doubt).
+% CTAN: http://www.ctan.org/pkg/float
+\usepackage{float}
+
+
+% Extendes support for special-text-floating of figures, which is not supported by package float.
+%A word of warning: Wrapping figures in LaTeX will require a lot of manual adjustment of your document. There are several packages available for the task, but none of them works perfectly. Before you make the choice of including figures with text wrapping in your document, make sure you have considered all the options. For example, you could use a layout with two columns for your documents and have no text-wrapping at all.
+%\usepackage{wrapfig}
+
+\usepackage{pbox}
+
+% Extended color support
+% I use the command \definecolor for example. 
+% Option 'Table': Load the colortbl package, in order to use the tools for coloring rows, columns, and cells within tables.
+% CTAN: http://www.ctan.org/pkg/xcolor
+\usepackage[table]{xcolor} 
+
+% Nice tables
+% CTAN: http://www.ctan.org/pkg/booktabs
+\usepackage{booktabs}
+
+% Better support for ragged left and right. Provides the commands \RaggedRight and \RaggedLeft. 
+% Standard LaTeX commands are \raggedright and \raggedleft
+% http://www.ctan.org/pkg/ragged2e
+\usepackage{ragged2e}
+
+% Create function plots directly in LaTeX
+% CTAN: http://www.ctan.org/pkg/pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.11}
+
+\usepackage{framed}
+
+\usepackage{pdfpages}

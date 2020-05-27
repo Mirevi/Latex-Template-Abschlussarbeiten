@@ -1,0 +1,23 @@
+%%% File encoding is utf8
+%%% You can use special characters just like ä,ü and ñ
+
+% Package for PDF features such as bookmarks and hyperlinks. 
+% Important: Should be loaded at the end.
+% CTAN: http://www.ctan.org/pkg/hyperref
+\usepackage[%
+pdftitle={Hier Titel der Arbeit},%
+pdfauthor={Hier Name des Studenten},%
+pdfcreator={LaTeX},
+pdfsubject={Hier Art der Arbeit},
+pdfkeywords={passende keywords},
+bookmarks, % Create bookmarks
+bookmarksopen=true, % Unfold bookmatk tree in PDF viewer when document is opened
+bookmarksopenlevel=1, % Level of unfolding
+bookmarksnumbered=true, % Number bookmarks
+hidelinks, % do not highlight hyperlinks -- looks ugly
+% Ansicht beim Öffnen
+pdfpagelabels=true, % See manual...
+plainpages=false, % See manual...
+hyperfootnotes=true, % Hyperlinks for footnotes
+hyperindex=true, % Indexeinträage verweisen auf Text
+]{hyperref}

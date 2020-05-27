@@ -1,0 +1,128 @@
+%%% File encoding is ISO-8859-1 (also known as Latin-1)
+%%% You can use special characters just like ä,ü and ñ
+%%% LaTeX template by Manuel Kuehner, 2015
+
+%%% If you use this template then please give credit like this:
+%%% ----------------------------
+% LaTeX code inspired by the LaTeX Thesis Template by Manuel Kuehner 
+% www.bedienhaptik.de/latex-template/
+%%% ----------------------------
+
+% ##############################################
+% Start: Template Preamble
+% ##############################################
+%
+
+% Documentclass definition
+\documentclass[11pt,a4paper,twoside, titlepage,headings = big, toc = bibliography,toc = listof]{scrbook}
+
+% Loading additional packages from the KOMA-Script family
+\input{01_Preamble/KOMA-Script-Packages}
+
+% Page layout definition
+\input{01_Preamble/PageLayout}
+
+% Standard packages
+\input{01_Preamble/CommonPackages}
+
+% ####-Important-####
+%
+% Definition of the two main colors
+% -----------------------
+% The corresponding xcolor package ist loaded in the file 
+% 01_Preamble/StandardPackages.tex
+%
+% ####-Important-####
+\definecolor{mireviColorRed}{HTML}{fe0a1a}
+\definecolor{mireviColorYellow}{HTML}{fe6000}
+\definecolor{mireviColorOrange}{HTML}{ff8f00}
+\definecolor{mireviColorGrey}{HTML}{3c3c3c}
+
+% Customization of 
+% - Floating Objects (Caption) 
+% - Table of Contents (TOC)
+% - List of Figures
+% - List of Tables
+% - Headings (like chapter, section, etc.)
+\input{01_Preamble/Floating-AND-TOC-AND-ListOf-AND-Headings}
+
+% Customization of the header, footer and teh margin note
+\input{01_Preamble/HeaderFooterMarginnote}
+
+% Optimize paragraphs (avoid overfull... warnings)
+\input{01_Preamble/ParagraphOptimization}
+
+% PDF related packages
+\input{01_Preamble/PDF-Related}
+
+% PDF related packages
+\input{01_Preamble/RandomTextPackage}
+
+%
+% #######################
+% Ende: Template Preamble
+% #######################
+
+% ##############################################
+% Start: Document
+% ##############################################
+%
+% ------------------------------------------------------------------
+\begin{document}
+\frontmatter
+% Title page
+\input{02_Chapters/TitlePage}
+% Empty page after title page
+\cleardoublepage
+
+% Activate header and footer defined in the file:
+% 01_Preamble/HeaderFooterMarginnote.tex
+\pagestyle{scrheadings}
+
+% Activate roman numbering (e. g. xii)	
+\pagenumbering{roman}
+% Start with page 1 (I)
+\setcounter{page}{1}
+% Prologue
+\input{02_Chapters/Prologue}
+
+\input{02_Chapters/Acknowledgment}
+
+
+% Abstract
+\input{02_Chapters/Abstract}
+
+% Table of Contents and Lost of Figures/Tables
+\input{02_Chapters/TOC-AND-ListOf}
+\input{02_Chapters/Abkürzungsverzeichnis}
+
+% Introduction
+
+
+\input{02_Chapters/Introduction}
+
+% Activate arabic numbering (e. g. 12)	
+
+\input{02_Chapters/Chapter2}
+
+\input{02_Chapters/Formatierung}
+
+\bibliographystyle{apalike}
+\bibliography{05_Bibliography/Literaturverzeichnis}
+
+
+% Start appendix
+\appendix
+
+%Appendix A
+\input{02_Chapters/AppendixExampleChapterA}
+
+% Appendix B
+%\input{02_Chapters/AppendixExampleChapterB.tex}
+
+\end{document}
+% ------------------------------------------------------------------
+%
+% #######################
+% End: Document
+% #######################
