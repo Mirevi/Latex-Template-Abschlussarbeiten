@@ -34,12 +34,20 @@
 \setheadwidth[0pt]{textwithmarginpar}
 
 % Define with of header line
-\setheadsepline{0.4pt}
+%\setheadsepline{0.4pt}
 
 % Define width of footer
 \setfootwidth[0pt]{text}
 % Define with of footer line (here: no line)
-\setfootsepline[text]{0pt}
+%\setfootsepline[text]{0pt}
+
+% setheadsepline{0.4pt} und setfootsepline[text]{0pt} erstetzt duruch:
+\KOMAoptions{footsepline=0pt}
+\KOMAoptions{headsepline=0.4pt}
+% Dann gabs keine Warnings mehr (vom unwissenden Mitja gehackt!)
+
+
+
 
 % Some calculations
 % calc package is needed which is loaded here: 01_Preamble/CommonPackages.tex

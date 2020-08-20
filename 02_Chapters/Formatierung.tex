@@ -5,7 +5,16 @@
 In diesem Kapitel wird die Handhabung mit dem Template vorgestellt und anhand verschiedener Beispiele gezeigt. Die Struktur des Dokuments soll simpel gehalten werden und basiert auf einer einfachen Ordnerstruktur. Diese ist wichtig, um auf die verschiedenen Dateien über das MainFile zugreifen zu können. Daher sollte die Ordnerstruktur unbedingt beibehalten werden.
 
 \section{Preambles}
-Die Preambles definieren die Formatierung (Schriftgröße, Seitenzahlen, Farben, etc.) des Dokuments und sollten \textbf{nicht} bearbeitet werden! Nur die Datei \textbf{PDF-Related} kann bearbeitet und die entsprechenden "Felder" ausgefüllt werden.
+Die Preambles definieren die Formatierung (Schriftgröße, Seitenzahlen, Farben, etc.) des Dokuments und sollten \textbf{nicht} bearbeitet werden! Nur die Datei \textbf{PDF-Related} kann bearbeitet und die entsprechenden "Felder" ausgefüllt werden. 
+
+Schreibt man seine Arbeit auf Englisch, so sollte in den Preambles jedoch die Sprache umgestellt werden(\emph{siehe Abbildung}). Dies geschieht über ein Package. Wird die Arbeit auf Deutsch geschrieben, so kann das Package auskommentiert bleiben. Soll die Arbeit auf Englisch geschrieben werden muss lediglich das \%-Zeichen vor dem \emph{usepackage} entfernt werden.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{03_GraphicFiles/SelectLanguage.PNG}
+    \caption{Möglichkeit zur Sprachauswahl (hier auskommentiert)}
+    \label{fig:langSel}
+\end{figure}
 
 \section{Kapitel}
 Jedes Oberkapitel hat seine eigene .tex Datei. Diese Dateien liegen in dem Ordner für Kapitel. Möchte man ein neues Kapitel erstellen, so legt man einfach eine neue Datei an und legt sie in diesem Ordner ab. Das Kapitel muss dann über das MainFile (siehe \ref{cha:mainFile}) in das Dokument eingebunden werden. Verschiedene Kapitel lassen sich auch, ähnlich zu einem Wiki-Artikel, untereinander verlinken. Dazu vergibt man dem jeweiligen Kapitel ein Label und ein Kürzel, über welches das jeweilige Kapitel angesprochen werden kann.
